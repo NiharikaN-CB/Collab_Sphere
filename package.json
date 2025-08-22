@@ -1,0 +1,26 @@
+{
+  "name": "collab-sphere",
+  "version": "1.0.0",
+  "description": "A skill-based intelligent student collaboration platform for academic projects",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && npm run seed",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "collaboration",
+    "student",
+    "academic",
+    "matching",
+    "projects"
+  ],
+  "author": "Collab Sphere Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
